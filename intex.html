@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionn Loop Creative Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Section 1 */
+    .hero {
+      background: linear-gradient(to bottom, #e6b0b0, #5b0f0f);
+      color: white;
+      padding: 80px 10% 40px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 20px;
+      max-width: 600px;
+    }
+
+    /* Section 2 */
+    .services {
+      background-color: #1d1d1d;
+      color: white;
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .services p.sub {
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    .service-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .service {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .service i {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 1em;
+    }
+
+    /* Section 3 */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background: linear-gradient(to right, #d89494, #e3a3a3);
+      color: white;
+    }
+
+    .contact-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 40px;
+    }
+
+    .contact-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-text p {
+      font-size: 1.2em;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .contact-form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .contact-form button {
+      padding: 12px 30px;
+      background-color: #1c1c1c;
+      color: white;
+      font-size: 1.2em;
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    .footer {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px 10px;
+      color: #333;
+    }
+
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: #333;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1 -->
+  <section class="hero">
+    <h1>Design, create, and innovate without limits.</h1>
+    <p>We're your partners in creation. We pride ourselves on providing personalized service and expert guidance, from initial design to final print. Your satisfaction is our top priority. Let us help you bring your vision to life.</p>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="services">
+    <h2>Get Creative and Make it real.</h2>
+    <p class="sub">Our services will help you unleash your hidden artist and manifest your ideas into reality.</p>
+    <div class="service-items">
+      <div class="service">
+        <i class="fas fa-cube"></i>
+        <h3>3D Modeling</h3>
+        <p>Bring your concepts to life with precise, high-quality 3D models—perfect for animation, product design, or game assets.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-video"></i>
+        <h3>Video Editing</h3>
+        <p>From reels to short films, we turn raw footage into polished, engaging videos tailored to your message and style.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Logo Design</h3>
+        <p>We craft impactful, memorable logos that reflect your brand identity—perfect for businesses, creators, and startups.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="contact-section">
+    <div class="contact-text">
+      <h2>Let’s Discuss Your Project, Contact Us Today!</h2>
+      <p>Our experienced professionals are ready to assist you. All you have to do is fill the form or reach out to <a href="mailto:Visionn.loop@gmail.com" style="color: white; text-decoration: underline;">Visionn.loop@gmail.com</a>.</p>
+    </div>
+
+    <form class="contact-form" action="mailto:Visionn.loop@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-row">
+        <input type="text" name="First Name" placeholder="First name*" required />
+        <input type="text" name="Last Name" placeholder="Last name*" required />
+      </div>
+      <div class="form-row">
+        <input type="email" name="Email" placeholder="Email address*" required />
+        <input type="tel" name="Phone" placeholder="Phone number*" required />
+      </div>
+      <textarea name="Message" placeholder="Message*" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
