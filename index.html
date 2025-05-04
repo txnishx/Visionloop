@@ -1,146 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vision Loop</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionn Loop Creative Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Section 1 */
+    .hero {
+      background: linear-gradient(to bottom, #e6b0b0, #5b0f0f);
+      color: white;
+      padding: 80px 10% 40px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 20px;
+      max-width: 600px;
+    }
+
+    /* Section 2 */
+    .services {
+      background-color: #1d1d1d;
+      color: white;
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .services p.sub {
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    .service-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .service {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .service i {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 1em;
+    }
+
+    /* Section 3 */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background: linear-gradient(to right, #d89494, #e3a3a3);
+      color: white;
+    }
+
+    .contact-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 40px;
+    }
+
+    .contact-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-text p {
+      font-size: 1.2em;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .contact-form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .contact-form button {
+      padding: 12px 30px;
+      background-color: #1c1c1c;
+      color: white;
+      font-size: 1.2em;
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    .footer {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px 10px;
+      color: #333;
+    }
+
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: #333;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Vision Loop Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
+  <!-- Section 1 -->
   <section class="hero">
-    <h1>Welcome to Vision Loop</h1>
-    <p>Creative Solutions for Last-Min Projects, Edits, Logos, 3D Models & More</p>
-    <a href="#contact" class="cta">Get in Touch</a>
+    <h1>Design, create, and innovate without limits.</h1>
+    <p>We're your partners in creation. We pride ourselves on providing personalized service and expert guidance, from initial design to final print. Your satisfaction is our top priority. Let us help you bring your vision to life.</p>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>✔ Last Minute Presentations</li>
-      <li>✔ Video Editing & Logo Animation</li>
-      <li>✔ Poster & Logo Design</li>
-      <li>✔ 3D Modeling</li>
-      <li>✔ Website Development</li>
-    </ul>
+  <!-- Section 2 -->
+  <section class="services">
+    <h2>Get Creative and Make it real.</h2>
+    <p class="sub">Our services will help you unleash your hidden artist and manifest your ideas into reality.</p>
+    <div class="service-items">
+      <div class="service">
+        <i class="fas fa-cube"></i>
+        <h3>3D Modeling</h3>
+        <p>Bring your concepts to life with precise, high-quality 3D models—perfect for animation, product design, or game assets.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-video"></i>
+        <h3>Video Editing</h3>
+        <p>From reels to short films, we turn raw footage into polished, engaging videos tailored to your message and style.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Logo Design</h3>
+        <p>We craft impactful, memorable logos that reflect your brand identity—perfect for businesses, creators, and startups.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>Why Vision Loop?</h2>
-    <p>We blend creativity with efficiency to deliver futuristic digital content that speaks for you. Whether it's a tight deadline or a unique design request, we're your one-stop solution.</p>
+  <!-- Section 3 -->
+  <section class="contact-section">
+    <div class="contact-text">
+      <h2>Let’s Discuss Your Project, Contact Us Today!</h2>
+      <p>Our experienced professionals are ready to assist you. All you have to do is fill the form or reach out to <a href="mailto:Visionn.loop@gmail.com" style="color: white; text-decoration: underline;">Visionn.loop@gmail.com</a>.</p>
+    </div>
+
+    <form class="contact-form" action="mailto:Visionn.loop@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-row">
+        <input type="text" name="First Name" placeholder="First name*" required />
+        <input type="text" name="Last Name" placeholder="Last name*" required />
+      </div>
+      <div class="form-row">
+        <input type="email" name="Email" placeholder="Email address*" required />
+        <input type="tel" name="Phone" placeholder="Phone number*" required />
+      </div>
+      <textarea name="Message" placeholder="Message*" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email us your project idea: <a href="mailto:Visionn.loop@gmail.com">Visionn.loop@gmail.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Vision Loop. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
+
 </body>
 </html>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-  background-color: #0d0d0d;
-  color: #ffffff;
-}
-
-header {
-  background: #1a1a1a;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 60px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #00f0ff;
-}
-
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #111111, #1f1f1f);
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.cta {
-  padding: 12px 30px;
-  background-color: #00f0ff;
-  color: #000;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #00bfc9;
-}
-
-section {
-  padding: 60px 40px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 20px;
-  color: #00f0ff;
-}
-
-ul li {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1a1a1a;
-  color: #888;
-}
-<img src="images/logo.png" alt="Vision Loop Logo" class="logo" />
